@@ -1,0 +1,36 @@
+nav {
+  background-color: yellow; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 20px; }
+    nav a:hover {
+      color: red;
+      background-color: orange; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: orange; }
+  footer p {
+    color: red; }
+
+header {
+  width: 100%; }
+  header h1, header h2 {
+    color: red;
+    text-align: center; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
