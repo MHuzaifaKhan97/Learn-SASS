@@ -1,0 +1,21 @@
+$color:red;
+$bg-color:orange;
+$val: 20px 0px;
+$border: 3px solid gray;
+$main-font:verdana;
+$text-center:center;
+
+ul li{
+    background-color: $bg-color;
+    color: $color;
+    list-style-type: none;
+    margin: $val;
+    padding: $val;
+    border: $border;
+    font-family: $main-font;
+    text-align: $text-center;
+}
+h1,h2{
+    color: $color;
+    border: $border;
+}
