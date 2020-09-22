@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+// @mixin bd-radius() {
+//     -webkit-border-radius:5px;
+//     -moz-border-radius:5px;
+//     border-radius: 5px;
+// }
+
+@mixin bd-radius($val) {
+    -webkit-border-radius:$val;
+    -moz-border-radius:$val;
+    border-radius: $val;
+}
+
+@mixin  box-shadow($top,$left,$blur,$color) {
+    -webkit-box-shadow:$top $left $blur $color;
+    -moz-box-shadow:$top $left $blur $color;
+    box-shadow:$top $left $blur $color;
+}
+
+#first{
+    background: darkslateblue;
+    width: 150px;
+    height: 150px;
+    @include bd-radius(30px);
+    @include box-shadow( 3px,3px ,0px ,black )
+}
+
+#second{
+    background: darkseagreen;
+    width: 400px;
+    padding: 15px;
+    @include bd-radius(50px);
+    @include box-shadow( 5px,13px ,5px ,gray )
+
+}
+
+#third{
+    background: hotpink;
+    width: 600px;
+    padding: 20px;
+    @include bd-radius(100px);
+    @include box-shadow(20px,23px ,10px ,orange )
+}
+
