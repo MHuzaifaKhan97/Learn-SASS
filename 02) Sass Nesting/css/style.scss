@@ -1,0 +1,34 @@
+$color:red;
+$bg-color:orange;
+$size:20px;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: yellow;
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+
+	li{
+	display:inline-block;
+	}
+	
+	a{
+	display:block;
+	padding:6px 12px;
+	text-decoration:none;
+    font-size: $size;    
+        &:hover{
+            color: $color;
+            background-color: $bg-color;
+        }
+    }   
+}
+h1,h2{
+    color: $color;
+}
