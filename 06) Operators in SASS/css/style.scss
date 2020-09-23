@@ -1,0 +1,49 @@
+// Types of Operators
+
+// 1. Equality Operators ( == , != ) 
+// 2. Relational Operators ( <, >, <=, >= )
+// 3. Numeric Operators ( +, -, *, /, %  )
+// 4. String Operators ( + (concatenation) )
+// 5. Boolean Operators ( and, or, not )
+
+$va1: 10;
+$var2: 3;
+
+body{
+    margin: 0;
+    padding: 0;
+}    
+
+h1{
+    color: orange;
+
+// Equality Operators
+    // padding: 10px == 10px;
+    // padding: 10px == 10px;
+    // padding: (5px 4px) == (5px 4px);
+    // padding: (9px 4px) != (5px 4px);
+
+// Relational Operators  
+    // padding: 1000ms <= 1s;
+    // padding: 1000ms >= 2s;
+    // padding: 3000ms > 2s;
+
+// Boolean Operators
+    // padding: 10px == 10px and arial == "arial";
+    // padding: 10px == 10px or aarial == "arial";
+    // padding: not (aial == "arial");
+    // padding: not (arial == "arial");
+
+// String Operators
+    // padding: $va1 + px;
+
+// Numeric Operator
+    // margin: $va1 + $var2 + px;
+    // margin: $va1 - $var2 + px;
+    // margin: $va1 / $var2 + px;
+    padding: $va1 * $var2 + px;
+    margin: $va1 % $var2 + px;
+    font-size: $va1 * 5 + px;
+}    
+
+
