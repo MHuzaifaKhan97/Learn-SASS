@@ -1,0 +1,29 @@
+// 1. Number Functions
+    // - abs()
+    // - ceil()
+    // - floor()
+    // - round()
+    // - max()
+    // - min()
+    // - comparable()
+    // - percentage()
+    // - randrom()
+    // - unit()
+    // - unitless()
+
+.test{
+    margin: abs(-10px);
+    // margin: ceil(9.00002px);
+    // margin: floor(9.9999px);
+    // margin: round(9.5999px);
+    // margin: max(10px,5px,55px);
+    // margin: min(10px,5px,55px);
+    // margin: percentage(.44); // return percentage
+    // margin: comparable(2px, 1px); // return true if values are comparable
+    // margin: comparable(2px, 1em); // return false now
+    // margin:random(20) // return random value b/w 0 to 1
+    // margin:random(20) // return random value b/w 0 to 20
+    // margin: unit(100em); // return em
+    // margin: unit(100px); // return px
+    // margin: unitless(100); // if unit return false, if not unit return true
+}

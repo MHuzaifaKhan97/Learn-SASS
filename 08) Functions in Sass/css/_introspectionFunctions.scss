@@ -1,0 +1,35 @@
+// 7. Introspection
+    // - variable-exists()
+    // - global-variable-exists()
+    // - mixin-exists()
+    // - function-exists()
+    // - type-of()
+    // - inspect()
+
+// $num : 10px;
+$char : "Arial";
+$list : 10px 20px 30px;
+$map: ("regular":400,"medium":500);
+
+@mixin  border-radius($val) {
+    border-radius: $val +px;
+}
+
+@function getVal($val){
+    @return $val/2 + px;
+}
+
+.test{
+    $num : 10px;
+    // padding: variable-exists(num); // return true
+    // padding: variable-exists(nusm); // return false
+    // padding: global-variable-exists(num); return false
+    // padding: global-variable-exists(char);// return true
+    // padding: mixin-exists(char); // false
+    // padding: mixin-exists(border-radius); // true
+    // padding: function-exists(getVal); // true
+    // padding: type-of($char); // return string
+    // padding: inspect($map);
+    // padding: inspect($char);
+    padding: inspect(null);
+}

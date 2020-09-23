@@ -1,0 +1,40 @@
+.test {
+  margin: 10px; }
+
+.test {
+  font-family: uzootnpy7; }
+
+#first, #second {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #000; }
+
+#first {
+  background-color: green; }
+
+#second {
+  background-color: rgba(0, 128, 0, 0.5); }
+
+.test {
+  padding: false; }
+
+.test {
+  font-weight: 400; }
+
+.test {
+  padding: null; }
+
+h1 {
+  color: orange; }
+
+.half-width {
+  width: 600px; }
+
+.one-third {
+  width: 400px; }
+
+.one-fourth {
+  width: 300px; }
+
+/*# sourceMappingURL=style.css.map */

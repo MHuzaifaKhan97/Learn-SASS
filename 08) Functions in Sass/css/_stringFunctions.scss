@@ -1,0 +1,25 @@
+// 2. String Functions
+    // quote()
+    // str-index()
+    // str-insert()
+    // str-length()
+    // str-slice()
+    // to-upper-case()
+    // to-lower-case()
+    // unique-id()
+    // unquote()
+
+
+.test{
+    // font-family: quote(Arial);
+    // font-family: unquote("Arial");
+    // font-family: to-upper-case("Arial");
+    // font-family: to-lower-case("AriAl");
+    // font-family: str-length("Helvetica Neue");
+    // font-family: str-index("Helvetica Neue","v"); // return 4
+    // font-family: str-insert("Helvetica Neue","Mono ",11);
+    // font-family: str-slice("Helvetica Neue",11);
+    // font-family: str-slice("Helvetica Neue",0,9);
+    font-family: unique-id(); // return a unique 9 character ID everytime.
+
+}

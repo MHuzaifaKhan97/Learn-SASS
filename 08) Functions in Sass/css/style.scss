@@ -1,0 +1,74 @@
+@import 'numberFunctions';
+@import 'stringFunctions';
+@import 'colorFunctions';
+@import 'listFunctions';
+@import 'selectorFunctions';
+@import 'mapFunctions';
+@import 'introspectionFunctions';
+
+// @function function-name($val){}
+// diffrence between function and mixins is
+// function returns some value, but mixins 
+// just print as it is.
+
+
+// SASS BUILTIN Funtions
+
+// 1. Numbers
+// 2. Strings
+// 3. Colors
+// 4. Lists
+// 5. Selectors
+// 6. Map
+// 7. Introspection
+
+
+// Customer Functions
+$container-width:1200;
+
+@function half($width){
+    @return $width/2 + px
+}
+
+@function one-third($width){
+    @return $width/3 + px
+}
+
+@function one-fourth($width){
+    @return $width/4 + px
+}
+
+h1{
+    color: orange;
+}
+
+.half-width{
+    width:half($container-width);
+}
+.one-third{
+    width: one-third($container-width);
+}
+.one-fourth{
+    width: one-fourth($container-width);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

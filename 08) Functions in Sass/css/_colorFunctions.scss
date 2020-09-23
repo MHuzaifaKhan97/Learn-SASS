@@ -1,0 +1,34 @@
+// 3. Color Functions
+    // - lighten()
+    // - darken()
+    // - adjust-hue()
+    // - saturate()
+    // - desaturate()
+    // - mix()
+    // - transparentize()
+
+$base-color:green;
+
+#first, #second{
+    width: 400px;
+    height: 100px;
+    margin-bottom: 20px;
+    border:1px solid #000;
+}
+#first{
+    background-color: $base-color;
+}
+
+#second{
+    // background-color: darken($base-color,20); // dark to 20%
+    // background-color: darken($base-color,50); // dark to 50%
+    // background-color: lighten($base-color, 60); // light to 60%
+    // background-color: adjust-hue($base-color, 40); // adjust hue to 40 degree
+    // background-color: saturate($base-color, 40); // adjust brightness to 40%
+    // background-color: desaturate($base-color, 40); 
+    // background-color: desaturate($base-color, 100);  //turn to gray if desaturate is 100% 
+    // background-color: mix($base-color,red,50);
+    // background-color: mix($base-color,yellow,50);
+    background-color: transparentize($base-color,.5);
+
+}

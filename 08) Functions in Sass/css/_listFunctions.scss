@@ -1,0 +1,41 @@
+// Three ways to create list
+
+$list: 10px 20px 30px;
+$list2: 40px, 50px, 60px;
+// $list3: [40px, 50px, 60px];
+// or
+// $list: 10px, 20px, 30px;
+// or
+// $list: [10px, 20px, 30px];
+
+// 4. List Functions
+    // - length()
+    // - nth()
+    // - set-nth()
+    // - join()
+    // - append()
+    // - zip()
+    // - index()
+    // - list-seperator()
+    // - is-bracketed()
+    
+
+.test{
+    // padding: length($list)+px; // return length of list
+    // padding: nth($list,2); // return 20px because it is on 2nd index 
+    // padding: set-nth($list,2,50px);
+    // padding: join($list,$list2); // join two lists
+    // padding: join((1,2,3),(4,5));
+    // padding: join((1,2,3),(4,5),space); // separate by space
+    // padding: join((1,2,3),(4,5),auto); // default
+    // padding: join((1 2 3),(4 5),comma); // seperate by comma
+    // padding: append($list,80px,comma);
+    // padding: append($list,80px 90px,comma);
+    // padding: zip($list,$list2); // first list to value ko second s join krdega
+    // padding: index($list,20px);
+    // padding: list-separator($list); // return space
+    // padding: list-separator($list2); // return comma
+    padding: is-bracketed($list); // return false
+    // padding: is-bracketed($list3); // return true
+
+}

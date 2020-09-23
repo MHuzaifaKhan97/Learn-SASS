@@ -1,0 +1,26 @@
+// 6. Map Functions
+    // - map-get()    
+    // - map-merge()    
+    // - map-remove()    
+    // - map-keys()    
+    // - map-values()    
+    // - map-has-key()    
+
+$font-weights :("regular":400,"medium":500,"bold":700);
+$font-weights2 :("lighest":100,"light":300);
+
+// $merge:map-merge($font-weights,$font-weights2);
+$mapR: map-remove($font-weights,"regular");
+
+.test{
+    font-weight: map-get($font-weights ,"regular" );
+    // font-weight: map-get($font-weights ,"medium" );
+    // font-weight: map-keys($font-weights);
+    // font-weight: map-values($font-weights );
+    // font-weight: map-keys($merge)
+    // font-weight: map-values($merge)
+    // font-weight: map-get($merge,"light")
+    // font-weight:map-keys($mapR);
+    // font-weight: map-has-key($font-weights,"regular"); //return true
+    // font-weight: map-has-key($font-weights,"regularr"); // return false
+}

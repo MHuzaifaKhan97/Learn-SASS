@@ -1,0 +1,114 @@
+// 5. Selectors
+    // - selector-nest()
+    // - selector-append()
+    // - selector-replace()
+    // - is-superselector()
+    // - simple-selectors() 
+    // - selector-unify()
+    // - simple-extend()
+   
+// Selector Nest
+
+// $selector: selector-nest("ul","li","a");
+
+// #{$selector}{
+//     text-decoration: none;
+//     &:hover{
+//         color: red;
+//     }
+// }
+
+// Selector Append
+
+// $selector: selector-append("a",".active");
+
+// #{$selector}{
+//     width: 10px;
+// }
+
+// Selector Replace
+
+// $selector: selector-replace(".test .info",".info",".xyz");
+
+// #{$selector}{
+//     width: 10px;
+// }
+
+// Is Super Selector
+
+// $selector: is-superselector("ul","li");
+
+// #{$selector}{
+//     width: 10px;
+// }
+
+// Simple Selectors
+
+// $selector: simple-selectors("a.abc");
+
+// #{$selector}{
+//     width: 10px;
+// }
+
+// Selector Unify
+
+// $selector: selector-unify("a.active","a.disable");
+// #{$selector}{
+//     width: 10px;
+// }
+
+// $selector: selector-unify("a","h1");
+// #{$selector}{
+//     width: 10px;
+// }
+
+// $selector: selector-unify(".active a",".main a");
+// #{$selector}{
+//     width: 10px;
+// }
+
+
+// Selector Extend
+// $selector: selector-extend("a.disable","a",".link");
+// #{$selector}{
+//     width: 10px;
+// }
+
+
+// $selector: selector-extend("a.disable","h1",".h2");
+// #{$selector}{
+//     width: 10px;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
