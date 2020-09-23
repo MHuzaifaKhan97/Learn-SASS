@@ -19,12 +19,13 @@
 
 ## Features of Sass:
 
-### - Variables
-### - Nesting
-### - Partials & Imports
-### - Minixs
-### - Extends
-### - Operators
+### - Variables ( $varName )
+### - Nesting   ( ul{ li { a {} } } )
+### - Partials & Imports ( @import 'className' )
+### - Minixs ( @mixin name(){} )
+### - Extends ( @extend )
+### - Operators ( Equality, Relational, Boolean, String, Numeric )
+### - Interpolation ( #{} )
 ### - Functions
 ### - Conditional Directives
 ### - Loops
