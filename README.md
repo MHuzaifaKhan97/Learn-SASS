@@ -26,7 +26,7 @@
 ### - Extends ( @extend )
 ### - Operators ( Equality, Relational, Boolean, String, Numeric )
 ### - Interpolation ( #{} )
-### - Functions
+### - Functions ( @function name($val){ @return $val*2 + px })
 ### - Conditional Directives
 ### - Loops
 
