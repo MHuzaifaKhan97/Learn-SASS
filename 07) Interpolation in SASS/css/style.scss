@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}    
+
+@mixin  margin($position,$pixel) {
+    margin-#{$position}: $pixel+px;
+}
+
+@mixin  set-icon($name) {
+    .icon-#{$name}{
+        background-image: url("/icons/#{$name}");
+    }
+}
+
+.test{
+    @include margin(left,40);
+    @include margin(right,10);
+}
+
+
+h1{
+    color: orange;
+}    
+
+
+@include set-icon(duck)
