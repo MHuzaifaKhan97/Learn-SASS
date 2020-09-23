@@ -1,0 +1,49 @@
+
+// Sass Nesting
+
+// .parent{
+//     color: red;
+//     child{
+//         color: #000;
+//         a{
+//             color: orange;
+//         }
+//     }
+// }
+
+// but this will show unnecessary repeatition of .parent etc.
+// like show in below code .. item class repeat again and again.
+
+// .item{
+//     color: red;
+
+//     .item-wrapper{
+//         color: green;
+
+//         img{
+//             width: 100%;
+//         }
+//     }
+
+//     .item-child{
+//         background-color: pink;
+//     }
+// }
+
+// to overcome this
+.item{
+        color: red;
+
+        @at-root{
+        .item-wrapper{
+            color: green;
+    
+            img{
+                width: 100%;
+            }
+        }
+    }
+        .item-child{
+            background-color: pink;
+        }
+    }
